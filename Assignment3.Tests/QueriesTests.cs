@@ -12,7 +12,7 @@ namespace BDSA2021.Assignment03.Tests
         {
             // Arrange
             var actual = Queries.GetWizardsByRowling();
-            var expected = new List<String>{"Harry Potter", "Ron Weasley", "Hermione Granger", "Albus Dumbledore", "Sirius Black", "Mad-Eye Moody", "Severus Snape", "Merlin", "Lord Voldemort"};
+            var expected = new List<String>{"Harry Potter", "Ron Weasley", "Hermione Granger", "Albus Dumbledore", "Sirius Black", "Mad-Eye Moody", "Severus Snape", "Merlin", "Lord Voldemort", "Lord Voldemort"};
             expected.Sort();
             // Act
             
