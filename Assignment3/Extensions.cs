@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
@@ -12,7 +11,7 @@ namespace BDSA2021.Assignment03
         }
 
         public static int WordCount(this string item){
-            return Regex.Matches(item, "\\p{L}+").Count();
+            return Regex.Matches(item, "\\p{L}+").Count;
         }
     }
 }

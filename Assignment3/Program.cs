@@ -3,15 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Assignment3
+namespace BDSA2021.Assignment03
 {
-    class Program
+    public class Program
     {
         IEnumerable<int>[] xs;
         int[] ys;
 
-        delegate void TestDelegate(string s);
+        //Delegates
+        public delegate void Reverse(string s);
+        public static Reverse reverse = (s) => {Console.WriteLine(s.Reverse().ToArray());};
+
+
+        public delegate bool NumericEqual(string s, int i);
+        public static NumericEqual numericEqual = (string s, int i) => {return Int32.Parse(s) == i;};
+        
         public delegate double Product(double x, double y);
+        public static Product calculateProduct = (double x, double y) => {return x * y;};
 
         static void Main(string[] args)
         {
@@ -29,18 +37,10 @@ namespace Assignment3
 
             
 
-            //Delegates
-            //Remember delegate void TestDelegate(string s); outside of the void
-            TestDelegate test = (s) => {Console.WriteLine(s.Reverse());};
-
             
-            Product result = (double x, double y) => {return x * y};
-            /*var result = new Product {
-                delegate(double x, double y) {
-                    return x * y;
-                }
-            } 
-            */
+        
+            
+
             
         }
     }
