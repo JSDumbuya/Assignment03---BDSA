@@ -23,6 +23,7 @@ namespace BDSA2021.Assignment03.Tests
             // Assert
             Assert.Equal(expected, actual);
         }
+        
         [Fact]
         public static void Product_given_17_58_and_8_10_returns_142_398()
         {
